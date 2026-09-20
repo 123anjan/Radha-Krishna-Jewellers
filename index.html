@@ -2521,7 +2521,17 @@
         </div>
       </div>
     </div>
-<script src="tailwind.config.js"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#da373d',
+        }
+      }
+    }
+  }
+</script>
     <script>
       function checkStoreStatus() {
         // Calculate current time in Kolkata / IST (UTC +5:30)
