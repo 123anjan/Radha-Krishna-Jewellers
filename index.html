@@ -1765,7 +1765,7 @@
               openLightbox(
                 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?q=80&w=1200&auto=format&fit=crop',
                 'Exquisite Neck Piece',
-                'Choker style neck piece crafted for grand celebrations and festivities.',
+                'Choker-style neck piece crafted for grand celebrations and festivities.',
               )
             "
           >
@@ -1800,7 +1800,7 @@
               openLightbox(
                 'https://images.unsplash.com/photo-1535632787350-4e68ef0ac584?q=80&w=1200&auto=format&fit=crop',
                 'Traditional Craft Details',
-                'Close-up artistry of Bengalee handmade gold jewellery finishing.',
+                'Close-up artistry of Bengali handmade gold jewellery finishing.',
               )
             "
           >
@@ -2216,7 +2216,11 @@
                     type="tel"
                     id="inquiry-phone"
                     required
-                    placeholder="e.g. +91 98300 00000"
+                    minlength="10"
+                    maxlength="10"
+                    pattern="[0-9]{10}"
+                    inputmode="numeric"
+                    placeholder="Enter 10-digit phone number"
                     class="w-full bg-brand-charcoal border border-stone-800 rounded-lg px-4 py-2.5 text-xs text-brand-cream focus:border-brand-gold focus:outline-none transition-colors"
                   />
                 </div>
